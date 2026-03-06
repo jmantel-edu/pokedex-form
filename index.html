@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Form</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="search">
+        <input type="text", id="pokemonName">
+        <label for="pokemonName">Pokémon Name</label>
+        <button onclick="handleSearch()" type="button">Search</button>
+    </form>
+
+    <div id="results">
+        <img id="pokemonSprite" style="display: none;">
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+</body>
+</html>
