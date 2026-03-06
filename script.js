@@ -43,5 +43,5 @@ function handleSearch() {
     // If everything is good, do the fetch
     let INPUT = document.getElementById("pokemonName").value.toLowerCase();
     console.log("Attempting to fetch: " + INPUT);
-    fetchData(INPUT.value);
+    fetchData();
 }
