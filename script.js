@@ -28,7 +28,7 @@ function handleSearch() {
     // Validation
     const NAME = document.forms["search"]["pokemonName"].value;
     const ERROR = document.getElementById("errorMessage");
-    const REGEX = /^[a-zA-Z-]+$/;
+    const REGEX = /^[a-zA-Z ]*$/;
     if (NAME == "") {
         ERROR.innerText = "Please enter a name.";
         return false;
